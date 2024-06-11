@@ -1,6 +1,14 @@
 package com.adhyan;
-
+/**
+ * @author Adhyan Chandhoke
+ * @date 11/6/2024
+ */
 public class Main {
+	
+	/**
+	 * Main Method
+	 * @param args Command line arguments.
+	 */
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
         list.addToFront(10);

@@ -3,8 +3,9 @@ package com.adhyan;
 /**
  * @author Adhyan Chandhoke
  * Date 08/06/2024
- *  implementation of a singly linked list.Provides basic operations such as checking if the list is empty and adding an element to the front of the list.
+ * Implementation of a single linked list.Provides basic operations such as checking if the list is empty and adding an element to the front of the list.
  */
+
 public class MyLinkedList {
 
     // Instance variable representing the head of the linked list
@@ -19,7 +20,6 @@ public class MyLinkedList {
 
     /**
      * Checks if the linked list is empty.
-     * 
      * @return true if the list is empty, false otherwise.
      */
     public boolean isEmpty() {
@@ -28,10 +28,10 @@ public class MyLinkedList {
 
     /**
      * Adds a new element to the front of the linked list.
-     * 
      * @param value The value to be added to the list.
      */
     public void addToFront(int value) {
+    	
         // Create a new Node with the given value
         Node node = new Node(value);
 
@@ -39,6 +39,7 @@ public class MyLinkedList {
             this.head = node;
             return;
         }
+        
         // Make the new node the head of the list
         node.setNext(head);
         this.head = node;
@@ -46,7 +47,6 @@ public class MyLinkedList {
 
     /**
      * Returns a string representation of the linked list.
-     * 
      * @return A string representing the elements of the list in order.
      */
     @Override
@@ -72,14 +72,15 @@ public class MyLinkedList {
      * A private class representing a node in the linked list.
      */
     private class Node {
+    	
         // Value stored in the node
         int value;
+        
         // Reference to the next node in the list
         Node next;
 
         /**
          * Constructor to initialize a node with a given value.
-         * 
          * @param value The value to be stored in the node.
          */
         public Node(int value) {
@@ -89,7 +90,6 @@ public class MyLinkedList {
 
         /**
          * Sets the reference to the next node in the list.
-         * 
          * @param next The next node in the list.
          */
         public void setNext(Node next) {
@@ -98,7 +98,6 @@ public class MyLinkedList {
 
         /**
          * Returns a string representation of the node.
-         * 
          * @return A string representing the value of the node.
          */
         @Override
